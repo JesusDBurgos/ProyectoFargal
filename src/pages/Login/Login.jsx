@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import InputField from '../../components/input.jsx'
 import { handleClickLabel } from '../../utilities/functions.js'
 
@@ -29,7 +30,9 @@ import { handleClickLabel } from '../../utilities/functions.js'
         placeholder="Contraseña"
         autoComplete="off"
         />
+        <Link to="/app/orders" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
         <button type='submit' className="btn btn-primary">Entrar</button>
+        </Link>
         </form>
     </>
   )
